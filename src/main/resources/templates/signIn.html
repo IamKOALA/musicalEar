@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Add CSS and JS to Thymeleaf</title>
+    <link th:href="@{/build/styles/stylesheet.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="static"></div>
+<div class="modal">
+    <div class="modal-container">
+        <div class="modal-left">
+            <h1 class="modal-title">Welcome!</h1>
+            <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
+            <div class="input-block">
+                <label for="email" class="input-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-block">
+                <label for="password" class="input-label">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="modal-right">
+            <img style="opacity: 0.75" src="https://images.wallpaperscraft.ru/image/single/apparatura_muzyka_ustanovka_171909_800x600.jpg"
+                 alt="">
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/js/signIn.js}"></script>
+</html>

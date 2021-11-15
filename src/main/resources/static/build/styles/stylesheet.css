@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
-/** {*/
-/*  box-sizing: border-box;*/
-/*}*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -14,6 +14,14 @@ body {
   background-image: url(https://images.unsplash.com/photo-1538137524007-21e48fa42f3f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac9fa0975bd2ebad7afd906c5a3a15ab&auto=format&fit=crop&w=1834&q=80);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.static {
+  height: 100vh;
+  background-image: url(https://images.wallpaperscraft.ru/image/single/udarnaia_ustanovka_apparatura_muzykalnyj_instrument_160881_1920x1080.jpg);
+  background-size: cover;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -92,7 +100,7 @@ body {
 }
 .modal.is-open {
   height: 100%;
-  background: rgba(51, 51, 51, 0.85);
+  background: rgba(51, 51, 51, 0.7);
 }
 .modal.is-open .modal-button {
   opacity: 0;
